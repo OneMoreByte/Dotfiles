@@ -1,0 +1,8 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+import:
+  - ~/.config/alacritty/os_specific.yml
+  - ~/.config/alacritty/theme.yml
+
+live_config_reload: true
+

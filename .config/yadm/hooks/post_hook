@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Install TPM if it doesn't exist
+if [ ! -d $HOME/.tmux/plugins/tpm ]; then
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
+# Upgrade and install vim plugins
+nvim -es -u init.vim -i NONE -c "PlugUpdate" -c "PlugInstall" -c "qa"
+
+# Install and upgrade tmux plugins
+sh -c "$HOME/.tmux/plugins/tpm/bin/install_plugins"
+sh -c "$HOME/.tmux/plugins/tpm/bin/update_plugins all"
