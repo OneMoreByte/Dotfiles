@@ -11,3 +11,5 @@ nvim -es -u init.vim -i NONE -c "PlugUpdate" -c "PlugInstall" -c "qa"
 # Install and upgrade tmux plugins
 sh -c "$HOME/.tmux/plugins/tpm/bin/install_plugins"
 sh -c "$HOME/.tmux/plugins/tpm/bin/update_plugins all"
+
+yadm alt
