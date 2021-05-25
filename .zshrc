@@ -20,7 +20,7 @@ case "$(uname -s)" in
 esac
 
 
-#ZSH_THEME="jsra"
+ZSH_THEME="jsra"
 ENABLE_CORRECTION="true"
 ZSH_DISABLE_COMPFIX=true
 
