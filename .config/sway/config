@@ -306,3 +306,4 @@ include /etc/sway/config.d/*
 include /home/jsck/.paperbox/processed/sway-theme
 exec systemd-notify --ready || true
 exec systemctl --user start resilio-sync.service
+exec lxpolkit
