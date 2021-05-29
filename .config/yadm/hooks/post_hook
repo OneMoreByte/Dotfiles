@@ -12,4 +12,7 @@ nvim -es -u init.vim -i NONE -c "PlugUpdate" -c "PlugInstall" -c "qa"
 sh -c "$HOME/.tmux/plugins/tpm/bin/install_plugins"
 sh -c "$HOME/.tmux/plugins/tpm/bin/update_plugins all"
 
+ln -s "$HOME/.theme/oh-my-zsh/" "$HOME/.oh-my-zsh/custom/themes"
+
+
 yadm alt
