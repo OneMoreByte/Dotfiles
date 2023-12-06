@@ -24,7 +24,7 @@ ZSH_THEME="jsra"
 ENABLE_CORRECTION="true"
 ZSH_DISABLE_COMPFIX=true
 
-plugins=(git sudo docker yarn vi-mode common-aliases)
+plugins=(git sudo docker vi-mode common-aliases)
 
 
 alias vim=nvim
