@@ -24,21 +24,24 @@ ZSH_THEME="jsra"
 ENABLE_CORRECTION="true"
 ZSH_DISABLE_COMPFIX=true
 
-plugins=(git sudo docker vi-mode common-aliases)
+plugins=(git sudo vi-mode common-aliases)
 
 
 alias vim=nvim
 
-if [[ "$MACHINE_OS" == "mac" ]]; then
-    source ~/.iterm2_shell_integration.zsh
+if [[ "$MACHINE_OS" == "linux" ]]; then
+
+
 fi
 
-if [[ "$MACHINE_OS" == "linux" ]]; then
-    export WLR_DRM_NO_MODIFIERS=1$
-    export XDG_CURRENT_DESKTOP=sway$
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+    export MOZ_ENABLE_WAYLAND=1
 fi
 
 if [[ -f $HOME/.profile ]]; then
     source $HOME/.profile
 fi
+
+alias ssh='TERM=xterm-256color ssh'
+
 source $ZSH/oh-my-zsh.sh
